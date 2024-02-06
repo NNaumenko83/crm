@@ -1,5 +1,6 @@
 import ClientCoomponent from './components/ClientCoomponent';
 import AddCompanyButton from './components/add-company-button';
+import MagicButton from './components/magic-buttoon';
 import ServerCoomponent from './components/server-component';
 import ServerCoomponentCopy from './components/server-component-copy';
 
@@ -10,10 +11,11 @@ export default function Home() {
         <main>
             <AddCompanyButton>Add company</AddCompanyButton>
             <h1 className="text-xl">Home page {new Date().toTimeString()}</h1>
-            <ServerCoomponent />
+            <MagicButton />
+            {/* <ServerCoomponent />
             <ClientCoomponent>
                 <ServerCoomponentCopy />
-            </ClientCoomponent>
+            </ClientCoomponent> */}
 
             {/* <StatusLabel status={Status.Active} disabled={false}>
                 Active

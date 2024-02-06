@@ -1,18 +1,26 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import AddCompanyButton from '@/app/components/add-company-button';
 
 import { Status } from '@/app/components/status-label';
 import Header from '@/app/components/Header';
+import { notFound } from 'next/navigation';
 
 export interface PageProps {
-    params: { id: string[] };
+    params: { id: string };
 }
 
 export default function Page({ params }: PageProps) {
+    useEffect(() => {
+        const id = Number.parseInt(params.id);
+        if (Number.isNaN(id)) {
+            notFound();
+        }
+    });
     return (
         <>
             <Header>Companies ({params.id.toString()})</Header>
-            <p>{new Date().toTimeString()}</p>
         </>
     );
 }
