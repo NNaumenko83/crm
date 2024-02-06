@@ -3,11 +3,11 @@ import React from 'react';
 import AddCompanyButton from '@/app/components/add-company-button';
 
 import { Status } from '@/app/components/status-label';
-import Header from '../components/Header';
-import Toolbar from '../components/ToolBar';
-import SearchInput from '../components/SearchInput';
-import CompanyTable from '../components/CompanyTable';
-import CompanyRow from '../components/CompanyRow';
+import Header from '@/app/components/Header';
+import Toolbar from '@/app/components/ToolBar';
+import SearchInput from '@/app/components/SearchInput';
+import CompanyTable from '@/app/components/CompanyTable';
+import CompanyRow from '@/app/components/CompanyRow';
 
 export interface PageProps {}
 
