@@ -3,8 +3,7 @@
 import React, { useEffect } from 'react';
 import AddCompanyButton from '@/app/components/add-company-button';
 
-import { Status } from '@/app/components/status-label';
-import Header from '@/app/components/Header';
+import Header from '@/app/components/header';
 import { notFound } from 'next/navigation';
 
 export interface PageProps {
